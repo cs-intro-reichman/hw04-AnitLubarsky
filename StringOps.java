@@ -26,16 +26,16 @@ public class StringOps {
     ////////////////////////////////////////////////////////////
     
     public static void main(String[] args) {
-        //testCapVowelsLowRest();
+        testCapVowelsLowRest();
         //testcamelCase();
-        testallIndexOf();
+        //testallIndexOf();
         
 
     }
     public static void testCapVowelsLowRest() {
-        String expecteString = "hEllO wOrld";
+        String expecteString = "vOwEls ArE fUn";
         String capVowlesLowRest;
-        capVowlesLowRest = capVowelsLowRest("Hello World");
+        capVowlesLowRest = capVowelsLowRest("vowels are fun");
         varifyCapVowelsLowRest(expecteString, capVowlesLowRest);
 
     }
@@ -50,6 +50,7 @@ public class StringOps {
                 case 'a':
                 case 'o':
                 case 'i':
+                case 'u':
                 case 'e':
                     str =  str + (char)(string.charAt(i) - 32);                   
                     break;
@@ -57,6 +58,7 @@ public class StringOps {
                 case 'O':
                 case 'I':
                 case 'E':
+                case 'U':
                     str = str + (string.charAt(i));
                     break;                    
                 default:
